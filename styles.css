@@ -77,8 +77,8 @@ nav ul li a:hover {
 main {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    width: 70%;
+    gap: 5rem;
+    width: 90%;
     margin: 0 auto;
     padding: 150px 20px 20px;
 }
@@ -143,10 +143,8 @@ footer {
 
 /* About Section */
 .about-section {
-    position: fixed;
-    top: 150px;
-    right: 20%;
     width: 400px;
+    max-width: 100%;
 }
 
 .about-section h2 {
@@ -176,8 +174,20 @@ footer {
 }
 
 .profile-section {
-    position: fixed;
-    top: 150px;
-    left: 20%;
     width: 400px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 968px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 100px;
+    }
+
+    .profile-section,
+    .about-section {
+        width: 100%;
+    }
 }
