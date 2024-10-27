@@ -1,0 +1,183 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+   :root {
+    --base: #191724;
+    --surface: #1f1d2e;
+    --overlay: #26233a;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --love: #eb6f92;
+    --gold: #f6c177;
+    --rose: #ebbcba;
+    --pine: #31748f;
+    --foam: #9ccfd8;
+    --iris: #c4a7e7;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--base);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+/* Header */
+header {
+    background-color: var(--surface);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--rose);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--overlay);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--foam);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--iris);
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 150px 20px 20px;
+}
+
+/* Sections */
+section {
+    flex-shrink: 0;
+    max-width: 400px;
+    margin: 0;
+    text-align: left;
+}
+
+section:first-of-type {
+    margin-top: 10px;
+}
+
+main h2 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+main p,
+main ul {
+    color: var(--text);
+}
+
+main ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--surface);
+    color: var(--muted);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--foam);
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--iris);
+}
+
+/* About Section */
+.about-section {
+    position: fixed;
+    top: 150px;
+    right: 20%;
+    width: 400px;
+}
+
+.about-section h2 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+}
+
+.about-section p a {
+    color: var(--foam);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.about-section p a:hover {
+    color: var(--iris);
+}
+
+.about-section .book {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-section {
+    position: fixed;
+    top: 150px;
+    left: 20%;
+    width: 400px;
+}
